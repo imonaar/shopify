@@ -1,10 +1,10 @@
 import styles from "./Details.module.scss";
 
-export default function Details() {
+export default function Details({title, date}) {
   return (
     <div className={styles.details}>
-      <h2>Orion's Belt Region in Gas and Dust</h2>
-      <span> 11-01-2022</span>
+      <h2>{title}</h2>
+      <span> {date} </span>
       <button> like </button>
     </div>
   );
