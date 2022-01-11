@@ -1,0 +1,24 @@
+.details{
+    margin-inline: 1.5rem;
+    padding-block: 1.5rem;
+    border-bottom: 1px solid rgb(221,221,221);
+
+    display: grid;
+    justify-items: start;
+    gap: 1rem;
+
+    @include tablet {
+      margin-inline: 2.5rem;
+    }
+
+    h2{
+      font-size: 26px;
+      line-height: 30px;
+      font-weight: 600;
+    }
+
+    span{
+      font-size: 14px;
+      color: #717171;
+    }
+}

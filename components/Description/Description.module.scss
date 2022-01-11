@@ -1,0 +1,16 @@
+.description{
+    margin-inline: 1.5rem;
+    padding-block: 1.5rem;
+
+    span{
+      // display: -webkit-box;
+      // overflow: hidden;
+      // text-overflow: ellipsis;
+      // -webkit-line-clamp: 10;
+      // -webkit-box-orient: vertical;
+    }
+
+    @include tablet {
+      margin-inline: 2.5rem;
+    }
+}
