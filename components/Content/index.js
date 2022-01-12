@@ -16,6 +16,7 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 export default function Content({ startDate }) {
   const day = getDate(startDate);
+  
   const site = `https://api.nasa.gov/planetary/apod?api_key=${api_key}&date=${day}`;
   const { data, error } = useSWR(site, fetcher);
 

@@ -7,7 +7,6 @@ import Content from "../Content";
 
 export default function App() {
   const [startDate, setStartDate] = useState(new Date());
-  console.log(startDate)
   
   return (
     <div className={styles.content}>

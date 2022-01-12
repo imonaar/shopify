@@ -7,6 +7,6 @@ import "react-datepicker/dist/react-datepicker.css";
 
 export default function Datepicker  ({setStartDate, startDate}) {
    return (
-    <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
+    <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} maxDate={new Date()} />
   );
 };
