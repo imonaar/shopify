@@ -3,12 +3,10 @@ import DatePicker from "react-datepicker";
 
 import "react-datepicker/dist/react-datepicker.css";
 
-// CSS Modules, react-datepicker-cssmodules.css
-// import 'react-datepicker/dist/react-datepicker-cssmodules.css';
 
-export default function Datepicker  () {
-  const [startDate, setStartDate] = useState(new Date());
-  return (
+
+export default function Datepicker  ({setStartDate, startDate}) {
+   return (
     <DatePicker selected={startDate} onChange={(date) => setStartDate(date)} />
   );
 };
