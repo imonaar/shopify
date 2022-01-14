@@ -1,7 +1,7 @@
 import styles from "./Button.module.scss";
 import { useState, useEffect } from "react";
 
-export default function index() {
+export default function Button() {
   const [liked, setLiked] = useState(false);
 
   return (
