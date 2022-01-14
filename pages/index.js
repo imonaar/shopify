@@ -6,6 +6,10 @@ import App from "../components/App";
 export default function Home() {
   return (
     <div className={styles.container}>
+    <Head>
+      <title> Spacestagram </title>
+      <meta name="description" content="Astronomy picture of the day"></meta>
+    </Head>
       <App />
     </div>
   );

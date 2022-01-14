@@ -16,7 +16,7 @@ const fetcher = (...args) => fetch(...args).then((res) => res.json());
 
 export default function Content({ startDate }) {
   const day = getDate(startDate);
-  
+
   const site = `https://api.nasa.gov/planetary/apod?api_key=${api_key}&date=${day}`;
   const { data, error } = useSWR(site, fetcher);
 
@@ -26,9 +26,11 @@ export default function Content({ startDate }) {
   const { title, date, explanation, url } = data;
   return (
     <div className={styles.content}>
-      <Imag url={url} />
-      <Details title={title} date={date} />
-      <Description explanation={explanation} />
+      <Imag url={url} title={title} />
+      <div className={styles.container}>
+        <Details title={title} date={date} />
+        <Description explanation={explanation} />
+      </div>
     </div>
   );
 }

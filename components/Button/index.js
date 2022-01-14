@@ -2,15 +2,14 @@ import styles from "./Button.module.scss";
 import { useState, useEffect } from "react";
 
 export default function index() {
-  const [liked, setLiked] = useState(localStorage.getItem("like") ?? false);
-
-  useEffect(() => localStorage.setItem("like", liked), [liked]);
+  const [liked, setLiked] = useState(false);
 
   return (
     <>
       <button
         className={styles.button}
         onClick={() => setLiked(() => !liked)}
+        aria-label = {liked ? 'unlike image' : 'like image'}
       >
         <i
           className={
