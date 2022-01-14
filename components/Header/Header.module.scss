@@ -1,27 +1,23 @@
-.header{
-    padding-inline: 1.5rem;
-    inline-size: 100%;
-    display: grid;
-    gap: 1rem;
-    padding-block: 1.5rem;
-   
-    div{
-      &:first-of-type{
-        flex: 1;
-      }
-    }
+.header {
+  padding-inline: 1.5rem;
+  inline-size: 100%;
+  display: grid;
+  gap: 1rem;
+  padding-block: 1.5rem;
 
-   
-
-    @include tablet {
-      padding-inline: 2.5rem;
-      display: flex;
-      align-items: center;
-  
+  div {
+    &:first-of-type {
+      flex: 1;
     }
+  }
+  @include tablet {
+    padding-inline: 2.5rem;
+    display: flex;
+    align-items: center;
+  }
 
-    @include desktop{
-      margin-inline: 0;
-      padding-inline: 0 ;
-    }
+  @include desktop {
+    margin-inline: 0;
+    padding-inline: 0;
+  }
 }
