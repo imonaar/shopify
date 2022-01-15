@@ -3,7 +3,8 @@
   inline-size: 100%;
   display: grid;
   gap: 1rem;
-  padding-block: 1.5rem;
+  padding-block: 2rem;
+ 
 
   div {
     &:first-of-type {
@@ -19,5 +20,6 @@
   @include desktop {
     margin-inline: 0;
     padding-inline: 0;
+    margin-top: 1rem;
   }
 }
